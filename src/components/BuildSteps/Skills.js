@@ -49,7 +49,7 @@ const Skills = () => {
                         key={index}
                         borderRadius='full'
                         variant='solid'
-                        colorScheme='purple'
+                        colorScheme='blue'
                         m={0.5}
                         key={skill.id}
                     >

@@ -25,13 +25,13 @@ const Header = () => {
                     <Stack flex={1} direction={'column'} spacing={4}>
                         <Heading
                             fontSize={{ base: '3xl', md: '5xl' }}
-                            bgGradient="linear(to-r, purple.500, blue.600)"
+                            bgGradient="linear(to-r, blue.500, blue.600)"
                             bgClip="text">
-                            If You Want To Get Gaining, Get A Resume
+                            Craft Your Future Your Resume, Your Success !
                         </Heading>
 
                         <Text color={'gray.600'} lineHeight={1.7} style={{ fontFamily: 'Poppins' }}>
-                            Resumegen is a tool that often constitutes an automated process in which you follow a template and input your information. Ability to build, print, and download your resume for free in minutes.
+                            BuildResume is a tool that often constitutes an automated process in which you follow a template and input your information. Ability to build, print, and download your resume for free in minutes.
                         </Text>
                         <Stack
                             spacing={{ base: 4, sm: 6 }}
@@ -43,9 +43,9 @@ const Header = () => {
                                 rounded={'md'}
                                 size={'lg'}
                                 px={6}
-                                colorScheme={'purple'}
+                                colorScheme={'blue'}
                             >
-                                Build Resume
+                                Let's Build
                             </Button>
                         </Stack>
 

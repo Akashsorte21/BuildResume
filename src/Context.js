@@ -10,7 +10,7 @@ export const ResumeProvider = ({ children }) => {
     const printElem = useRef();
     const toast = useToast();
 
-    const [theme, setTheme] = useState('purple.400');
+    const [theme, setTheme] = useState('blue.400');
 
     const [about, setAbout] = useState({
         name: "",
@@ -125,14 +125,6 @@ export const ResumeProvider = ({ children }) => {
         },
     ]);
 
-
-    // useEffect(() => {
-    //     toast({
-    //         title: `${theme.split(".", 1)} selected`,
-    //         status: 'success',
-    //         isClosable: true,
-    //       })
-    // }, [theme]);
 
     const value = { about, setAbout, educationList, setEducationList, skills, setSkills, workList, setWorkList, projects, setProjects, printElem, theme, setTheme };
 

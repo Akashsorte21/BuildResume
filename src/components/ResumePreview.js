@@ -61,7 +61,7 @@ const ResumePreview = () => {
           <HStack
             bg={theme}
             color={"white"}
-            p={4}
+            p={6}
             justifyContent={"space-between"}
           >
             <HStack spacing={1}>
@@ -70,11 +70,11 @@ const ResumePreview = () => {
             </HStack>
             <HStack spacing={1}>
               <MdLocalPhone />{" "}
-              <Text>{about.phone ? about.phone : "+918559584846"}</Text>
+              <Text>{about.phone ? about.phone : "+918345665774"}</Text>
             </HStack>
             <HStack spacing={1}>
               <MdLocationPin />{" "}
-              <Text>{about.address ? about.address : "Pune, MH"}</Text>
+              <Text>{about.address ? about.address : "Mumbai, MH"}</Text>
             </HStack>
             <HStack spacing={1}>
               <RiLinkedinBoxFill />{" "}
@@ -87,14 +87,15 @@ const ResumePreview = () => {
           <HStack
             w={"full"}
             h={"full"}
+            py={4}
             my={2}
             mb={6}
-            px={2}
+            px={4}
             justifyContent={"space-between"}
             alignItems={"flex-start"}
             spacing={1}
           >
-            <VStack mx={2} alignItems={"flex-start"} w={"full"} spacing={6}>
+            <VStack mx={4} alignItems={"flex-start"} w={"full"} spacing={6}>
               // EDUCATION
               <VStack alignItems={"flex-start"}>
                 <Heading as="h4" size="md" color={"gray.700"}>
@@ -110,12 +111,14 @@ const ResumePreview = () => {
                       alignItems={"flex-start"}
                       w={"full"}
                       pb={2}
+                      lineHeight={1.8}
+                      
                     >
                       <Text fontWeight={"medium"}>
-                        {degree ? degree : "B.Tech Computer Engineering"}
+                        {degree ? degree : "Bsc Computer Science"}
                       </Text>
                       <Text fontSize={"sm"}>
-                        {school ? school : "College of Engineering Pune"}
+                        {school ? school : "Mumbai University"}
                       </Text>
                       <HStack
                         fontSize={"xs"}
@@ -124,16 +127,16 @@ const ResumePreview = () => {
                         w={"full"}
                       >
                         <Text>
-                          {startYr ? startYr : 2014} - {endYr ? endYr : 2018}
+                          {startYr ? startYr : 2017} - {endYr ? endYr : 2020}
                         </Text>
-                        <Text>{grade ? grade : "8.7 CGPA"}</Text>
+                        <Text>{grade ? grade : "7.7 CGPA"}</Text>
                       </HStack>
                     </VStack>
                   );
                 })}
               </VStack>
-              // EDUCATION // WORK EXPERIENCE
-              <VStack alignItems={"flex-start"}>
+
+              <VStack alignItems={"flex-start"} >
                 <Heading as="h4" size="md" color={"gray.700"}>
                   WORK EXPERIENCE
                 </Heading>
@@ -152,7 +155,7 @@ const ResumePreview = () => {
                     <VStack
                       spacing={0.5}
                       alignItems={"flex-start"}
-                      lineHeight={1.3}
+                      lineHeight={1.8}
                       pb={2}
                     >
                       <Text fontWeight={"medium"}>
@@ -163,7 +166,7 @@ const ResumePreview = () => {
                         {type ? type : "Full-time"}
                       </Text>
                       <Text fontSize={"xs"} fontStyle={"italic"}>
-                        {startDate ? startDate : "2018-03"} -{" "}
+                        {startDate ? startDate : "2021-03"} -{" "}
                         {endDate ? endDate : "2021-12"}
                       </Text>
                       <Text fontSize={"sm"} as="p">
@@ -178,7 +181,7 @@ const ResumePreview = () => {
               // WORK EXPERIENCE
             </VStack>
 
-            <VStack mx={2} alignItems={"flex-start"} w={"full"} spacing={6}>
+            <VStack mx={2} alignItems={"flex-start"} w={"full"} spacing={8}>
               // SKILLS
               <VStack alignItems={"flex-start"}>
                 <Heading as="h4" size="md" color={"gray.700"}>
@@ -210,7 +213,7 @@ const ResumePreview = () => {
                     <VStack
                       spacing={0.5}
                       alignItems={"flex-start"}
-                      lineHeight={1.3}
+                      lineHeight={1.8}
                       pb={2}
                     >
                       <HStack as="a" href={url} target="_blank" spacing={0.5}>
